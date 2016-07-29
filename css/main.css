@@ -154,11 +154,15 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
- .bang {
-   margin-top: 10%;
- }
+
+body {
+    background-color: lightgrey;
+}
+.bang {
+    margin-top: 10%;
+}
 .cnctadapt {
-  padding-top: 2%;
+    padding-top: 2%;
 }
 .ajustt {
     max-width: 50%;
