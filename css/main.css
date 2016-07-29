@@ -1,10 +1,31 @@
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
+.opac {
+    opacity: 0.8;
+}
+.opac:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+section h1 {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: cursive;
+}
+section h2 {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: cursive;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -28,7 +49,6 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -53,12 +73,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -97,52 +112,60 @@ textarea {
 
 
 /* ##################################################################### */
+
+
 /* ##########################   SMARTPHONE   ########################### */
+
+
 /* ##################################################################### */
+
+
 /* Extra small devices (phones, less than 768px) */
 
 
-
 /* ##################################################################### */
+
+
 /* ############################   TABLETS   ############################ */
+
+
 /* ##################################################################### */
+
+
 /* Small devices (tablets, 768px and up) */
-   @media (min-width: 768px) {
 
-   }
+@media (min-width: 768px) {}
 
 /* ##################################################################### */
+
+
 /* ############################   DESKTOPS   ########################### */
+
+
 /* ##################################################################### */
+
+
 /* Medium devices (desktops, 992px and up) */
-   @media (min-width: 992px) {
 
-   }
+@media (min-width: 992px) {}
 
 /* ##################################################################### */
+
+
 /* ########################   LARGE DESKTOPS   ######################### */
+
+
 /* ##################################################################### */
+
+
 /* Large devices (large desktops, 1200px and up) */
-   @media (min-width: 1200px) {
 
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1200px) {}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers:
@@ -174,8 +197,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -204,12 +226,12 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -223,11 +245,7 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -238,72 +256,52 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
